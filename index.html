@@ -15,11 +15,21 @@
   gtag('config', 'G-CCSP9HFZQX', {
     'debug_mode': true   // ← lägg till detta
   });
+
+    btn.addEventListener('click', () => {
+    gtag('event', 'button_click', {
+      'event_category': 'Test',
+      'event_label': 'Testknapp',
+      'value': 1
+    });
+    alert('Event skickat till GA4!'); // valfritt, bara för att se att det triggar
+  });
 </script>
 
 </head>
 <body>
   <h1>GA4 Test</h1>
   <p>Om du ser detta, fungerar sidan!</p>
+  <button id="testButton">Klicka här!</button>
 </body>
 </html>
