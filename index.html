@@ -5,13 +5,18 @@
   <title>GA4 Test</title>
 
   <!-- Google Analytics (GA4) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-CCSP9HFZQX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-CCSP9HFZQX');
-  </script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-CCSP9HFZQX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  // Standard config
+  gtag('config', 'G-CCSP9HFZQX', {
+    'debug_mode': true   // ← lägg till detta
+  });
+</script>
+
 </head>
 <body>
   <h1>GA4 Test</h1>
